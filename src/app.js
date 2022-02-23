@@ -33,10 +33,12 @@ app.get("/weather", (req, res) => {
 
 app.get("*", (req, res) => {
   res.render("404error", {
-    errorMsg: "Oops page not found!",
+    errorMsg: "Oops page not found! Go Back",
   });
 });
 
 app.listen(port, () => {
   console.log(`Listening to port ${port}`);
 });
+
+// git push update to master
